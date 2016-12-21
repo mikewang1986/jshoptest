@@ -1,5 +1,4 @@
 package net.jeeshop.web.action.manage.system;
-
 import net.jeeshop.core.ManageContainer;
 import net.jeeshop.core.Services;
 import net.jeeshop.core.dao.page.PagerModel;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -29,7 +27,7 @@ import javax.servlet.http.HttpServletRequest;
  *
  */
 @Controller
-@RequestMapping("/manage/role")
+@RequestMapping("/manage/role")//value：     指定请求的实际地址，指定的地址可以是URI Template 模式（后面将会说明）；
 public class RoleAction extends BaseController<Role> {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LoggerFactory.getLogger(RoleAction.class);

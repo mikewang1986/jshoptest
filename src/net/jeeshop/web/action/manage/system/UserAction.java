@@ -1,5 +1,4 @@
 package net.jeeshop.web.action.manage.system;
-
 import net.jeeshop.core.ManageContainer;
 import net.jeeshop.core.Services;
 import net.jeeshop.core.dao.page.PagerModel;
@@ -27,14 +26,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.*;
-
 /**
  * 后台用户管理
  * @author huangf
@@ -45,9 +42,7 @@ import java.util.*;
 @RequestMapping("/manage/user")
 public class UserAction extends BaseController<User> {
 	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(UserAction.class);
-
 	private static final long serialVersionUID = 1L;
-
     private static final String page_input = "/manage/system/login";
     private static final String page_home = "/manage/system/home";
     private static final String page_toList = "/manage/system/user/userList";
