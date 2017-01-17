@@ -75,7 +75,6 @@ public abstract class BaseController<E extends PagerModel> {
         // 计算总页数
         pager.setPagerSize((pager.getTotal() + pager.getPageSize() - 1)
                 / pager.getPageSize());
-
         selectListAfter(pager);
         request.setAttribute("pager", pager);
         return page_toList;

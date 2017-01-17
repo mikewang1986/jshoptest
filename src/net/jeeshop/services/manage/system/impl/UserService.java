@@ -1,17 +1,12 @@
 package net.jeeshop.services.manage.system.impl;
-
 import java.util.List;
-
 import net.jeeshop.core.dao.BaseDao;
 import net.jeeshop.core.dao.page.PagerModel;
 import net.jeeshop.core.system.bean.User;
 import net.jeeshop.services.manage.system.UserInteface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
-
-
 /**
  * 用户业务逻辑实现类
  * 
@@ -22,7 +17,6 @@ import javax.annotation.Resource;
 public class UserService implements UserInteface {
     @Resource
 	private BaseDao dao;
-
 	public void setDao(BaseDao dao) {
 		this.dao = dao;
 	}

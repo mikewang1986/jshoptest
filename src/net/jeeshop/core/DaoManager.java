@@ -5,8 +5,6 @@
 package net.jeeshop.core;
 import java.util.List;
 import net.jeeshop.core.dao.page.PagerModel;
-
-
 /**
  * 该接口提供业务逻辑最基本的服务，所有的业逻辑类都必须实现此接口，这样该业务逻辑类对应
  * 的action就免去了写基本selectList、insert、update、toEdit、deletes麻烦s

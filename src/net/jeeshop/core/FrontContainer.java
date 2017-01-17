@@ -1,8 +1,6 @@
 package net.jeeshop.core;
-
 import net.jeeshop.services.front.indexImg.IndexImgService;
 import net.jeeshop.services.front.news.NewsService;
-
 /**
  * 常量类
  * @author jqsl2012@163.com
@@ -13,7 +11,6 @@ public class FrontContainer {
 	public static final String myCart = "myCart";//用户购物车key
 	public static final int PAGE_SIZE = 20;// 默认分页条数
 	public static final int default_page_left_product_size = 10;// 页面左侧默认加载的商品数
-	
 	public static final String news = "news";//内容key
 	public static final String lable = "lable";//标签KEY
 	public static final String sessionID = "sessionID";//sessionIDKEY
@@ -51,15 +48,12 @@ public class FrontContainer {
 	public static final String user_leftMenu_address = "address";//配送地址
 	public static final String user_leftMenu_favorite = "favorite";//商品收藏夹
 	public static final String user_leftMenu_exit = "exit";//退出
-	
 	public static final String action_exception_error = "action_exception_error";//action异常的错误信息
 	public static final String action_exception_stack_error = "action_exception_stack_error";//action异常栈的错误信息
-	
 	public static final Object insert_outAccount_lock = new Object();//使用第三方信任登陆，系统会为该信任登陆在本地系统建立一个虚账户，此变量保证虚账号在本系统中建立的时候账号不重复。加锁！
 	public static final Object insert_favorite_lock = new Object();//收藏夹锁.防止添加重复记录
 	public static final Object alipay_notify_lock = new Object();//支付宝通知锁
 	public static final Object update_account_score_lock = new Object();//更新会员积分锁，对会员积分的修改必须保证原子性
-	
 	public static final String request_illegal_error = "请求非法！";//所有的非法请求全部抛出此错误
 	
 }

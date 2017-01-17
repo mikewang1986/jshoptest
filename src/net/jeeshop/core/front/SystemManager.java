@@ -1,5 +1,4 @@
 package net.jeeshop.core.front;
-
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.HashMap;
@@ -8,9 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Random;
-
 import javax.annotation.PostConstruct;
-
 import net.jeeshop.core.cache.CacheProvider;
 import net.jeeshop.core.cache.SimpleCacheProvider;
 import net.jeeshop.core.listener.SystemListener;
@@ -31,13 +28,9 @@ import net.jeeshop.services.manage.hotquery.bean.Hotquery;
 import net.jeeshop.services.manage.order.bean.OrdersReport;
 import net.jeeshop.services.manage.oss.bean.AliyunOSS;
 import net.jeeshop.services.manage.systemSetting.bean.SystemSetting;
-
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.LoggerFactory;
-
 import com.google.common.collect.Lists;
-
-
 /**
  * 系统管理类.
  * 1、负责管理system.properties的东东
@@ -49,7 +42,6 @@ public class SystemManager {
 	private static Properties p = new Properties();
     private static CacheProvider cacheProvider = new SimpleCacheProvider();
 	private static SystemManager instance;
-
     @PostConstruct
     public void afterPropertiesSet(){
         instance = this;
@@ -149,7 +141,6 @@ public class SystemManager {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
         manageExpressMap.put("shunfeng", "顺风快递");
         manageExpressMap.put("ems", "EMS");
         manageExpressMap.put("shentong", "申通E物流");
@@ -180,7 +171,6 @@ public class SystemManager {
 		}
 		
 		int n = random.nextInt(systemSetting.getImagesList().size());
-		
 		return systemSetting.getImageRootPath()+systemSetting.getImagesList().get(n);
 	}
 

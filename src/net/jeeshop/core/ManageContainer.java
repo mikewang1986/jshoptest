@@ -15,7 +15,6 @@ public class ManageContainer {
 	public static final String PROJECTS = "projects";
 	public static final String USERS = "users";
 	public static final String loginError = "loginError";//登陆错误
-
 	public static final int PAGE_SIZE = 20;// 默认分页条数
 	
 	/**
@@ -70,7 +69,6 @@ public class ManageContainer {
 	public static final String db_insert = "insert";
 	public static final String db_update = "update";
 	public static final String db_delete = "delete";
-	
 	public static final String not_this_method = "不支持此操作!";
 	
 	/**

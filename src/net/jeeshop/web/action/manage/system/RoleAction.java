@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletRequest;
  *
  */
 @Controller
-@RequestMapping("/manage/role")//value：     指定请求的实际地址，指定的地址可以是URI Template 模式（后面将会说明）；
+@RequestMapping("/manage/role")//value：     指定请求的实际地址，指定的地址可以是URI Template 模式（后面将会说明）；method：  指定请求的method类型， GET、POST、PUT、DELETE等
 public class RoleAction extends BaseController<Role> {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LoggerFactory.getLogger(RoleAction.class);

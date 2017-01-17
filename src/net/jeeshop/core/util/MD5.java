@@ -1,7 +1,5 @@
 package net.jeeshop.core.util;
-
 import java.security.MessageDigest;
-
 public class MD5 {
 	public static void main(String[] args) {
 		System.out.println(md5("111111"));
